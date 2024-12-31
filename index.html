@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Territory Conquest Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mainMenu" class="menu-container">
+        <h1>Territory Conquest</h1>
+        <div class="menu-options">
+            <button data-mode="classic" data-difficulty="easy">Classic Mode - Easy</button>
+            <button data-mode="classic" data-difficulty="medium">Classic Mode - Medium</button>
+            <button data-mode="classic" data-difficulty="hard">Classic Mode - Hard</button>
+            <button data-mode="team">Team Mode</button>
+            <button data-mode="challenge">Challenge Mode</button>
+            <button data-mode="custom">Custom Game</button>
+        </div>
+    </div>
+
+    <div id="gameUI" class="game-container" style="display: none;">
+        <div class="game-header">
+            <div id="score">Territory: 0%</div>
+            <div id="timer">Time: 0:00</div>
+            <div id="objective"></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="game-controls">
+            <button id="restartButton">Restart Game</button>
+            <button id="menuButton">Main Menu</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
